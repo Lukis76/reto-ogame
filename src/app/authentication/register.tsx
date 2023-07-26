@@ -1,8 +1,6 @@
 "use client";
 
-import { InformationBubble } from "@/components/informationubble";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Button, Input, Alert } from "@/components/ui";
 import { InputAuth, schemaAuthInput } from "@/z/z.login";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
@@ -52,9 +50,9 @@ export const RegisterForm = () => {
             // onBlur={() => trigger("email")}
           />
         </label>
-        <InformationBubble type="error" visible={!!errors?.email}>
+        <Alert variant="error" hidden={!!errors?.email}>
           {errors.email?.message}
-        </InformationBubble>
+        </Alert>
       </div>
       <div>
         Contrasena

@@ -1,9 +1,19 @@
-import React from 'react'
+import { Button } from "../../components/ui/button";
 
 const HubPage = () => {
   return (
-    <div>HubPage</div>
-  )
-}
+    <main>
+      <div>
+        <Button>Jugar</Button>
+        <Button>
+          <p>
+            jugado por ultima vez
+            <span>{"server - jugadores: 5342"}</span>
+          </p>
+        </Button>
+      </div>
+    </main>
+  );
+};
 
-export default HubPage
+export default HubPage;

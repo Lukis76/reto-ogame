@@ -6,7 +6,6 @@ import { useState } from "react";
 import { LoginWith } from "../../components/LoginWith";
 import { IconFacebook } from "../../components/icons/iconFacebook";
 import { IconGoogle } from "../../components/icons/iconGoogle";
-import { InformationBubble } from "../../components/informationubble";
 import { LoginForm } from "./login";
 import { RegisterForm } from "./register";
 

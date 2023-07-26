@@ -1,4 +1,4 @@
-import { type IconProps } from "@/types/icon";
+import { type IconProps } from "@/interfaces/icon";
 
 export const IconGoogle = (props: IconProps) => (
   <svg
